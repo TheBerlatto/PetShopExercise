@@ -60,6 +60,7 @@ public class PetMachine {
         }
 
         this.pet = pet;
+        System.out.println("O pet " + pet.getName() + " foi colocado na máquina.");
     }
 
     public void removePet(){
@@ -67,7 +68,7 @@ public class PetMachine {
             System.out.println("Não há pets na máquina.");
         }
         this.clean = !this.pet.isClean();
-        System.out.println("O pet " + this.pet.getName() + " está limpo!");
+        System.out.println("O pet " + this.pet.getName() + " foi retirado da máquina!");
         this.pet = null;
     }
 
